@@ -1,0 +1,288 @@
+{
+  "__version__": "1.3.9",
+  "log": {
+    "level": 1
+  },
+  "common": {
+    "polyfills": {
+      "asyncFunctions": true
+    },
+    "buildPath": "project://build",
+    "outputName": "android",
+    "mainBundleCompressionType": "merge_dep",
+    "platform": "android",
+    "debug": false
+  },
+  "BuildTaskManager": {
+    "taskMap": {
+      "1745827489617": {
+        "type": "build",
+        "id": "1745827489617",
+        "progress": 1,
+        "state": "success",
+        "stage": "build",
+        "message": "2025-4-28 16:07:03 build success in 6 s!",
+        "detailMessage": "// ---- build task cocos-service：onAfterCompressSettings ----\r",
+        "options": {
+          "name": "FirstGame",
+          "server": "",
+          "engineModulesConfigKey": "defaultConfig",
+          "platform": "web-mobile",
+          "buildPath": "project://build",
+          "debug": false,
+          "buildMode": "normal",
+          "mangleProperties": false,
+          "md5Cache": false,
+          "skipCompressTexture": false,
+          "sourceMaps": false,
+          "overwriteProjectSettings": {
+            "includeModules": {
+              "gfx-webgl2": "on",
+              "physics": "inherit-project-setting",
+              "physics-2d": "inherit-project-setting"
+            },
+            "macroConfig": {
+              "cleanupImageCache": "inherit-project-setting"
+            }
+          },
+          "nativeCodeBundleMode": "both",
+          "polyfills": {
+            "asyncFunctions": true
+          },
+          "experimentalEraseModules": false,
+          "startSceneAssetBundle": false,
+          "bundleConfigs": [],
+          "inlineEnum": true,
+          "useBuiltinServer": false,
+          "md5CacheOptions": {
+            "excludes": [],
+            "includes": [],
+            "replaceOnly": [],
+            "handleTemplateMd5Link": true
+          },
+          "mainBundleIsRemote": false,
+          "mainBundleCompressionType": "merge_dep",
+          "useSplashScreen": true,
+          "bundleCommonChunk": false,
+          "packAutoAtlas": true,
+          "startScene": "10a52715-31ed-4423-acee-f019cb68fc32",
+          "outputName": "web-mobile",
+          "taskName": "web-mobile",
+          "scenes": [
+            {
+              "url": "db://assets/Scene/game.scene",
+              "uuid": "10a52715-31ed-4423-acee-f019cb68fc32"
+            }
+          ],
+          "wasmCompressionMode": false,
+          "packages": {},
+          "__version__": "1.3.9",
+          "logDest": "project://temp/builder/log/web-mobile4-28-2025 16-04.log"
+        },
+        "time": "4-28-2025 16:06:57",
+        "dirty": false
+      },
+      "1745827697818": {
+        "type": "build",
+        "id": "1745827697818",
+        "progress": 1,
+        "state": "success",
+        "stage": "build",
+        "message": "2025-4-28 16:08:56 build success in 38 s!",
+        "detailMessage": "// ---- build task 整理静态模板文件 ----\r",
+        "options": {
+          "name": "FirstGame",
+          "server": "",
+          "engineModulesConfigKey": "defaultConfig",
+          "platform": "web-desktop",
+          "buildPath": "project://build",
+          "debug": false,
+          "buildMode": "normal",
+          "mangleProperties": false,
+          "md5Cache": false,
+          "skipCompressTexture": false,
+          "sourceMaps": false,
+          "overwriteProjectSettings": {
+            "includeModules": {
+              "gfx-webgl2": "on",
+              "physics": "inherit-project-setting",
+              "physics-2d": "inherit-project-setting"
+            },
+            "macroConfig": {
+              "cleanupImageCache": "inherit-project-setting"
+            }
+          },
+          "nativeCodeBundleMode": "both",
+          "polyfills": {
+            "asyncFunctions": true
+          },
+          "experimentalEraseModules": false,
+          "startSceneAssetBundle": false,
+          "bundleConfigs": [],
+          "inlineEnum": true,
+          "useBuiltinServer": false,
+          "md5CacheOptions": {
+            "excludes": [],
+            "includes": [],
+            "replaceOnly": [],
+            "handleTemplateMd5Link": true
+          },
+          "mainBundleIsRemote": false,
+          "mainBundleCompressionType": "merge_dep",
+          "useSplashScreen": true,
+          "bundleCommonChunk": false,
+          "packAutoAtlas": true,
+          "startScene": "10a52715-31ed-4423-acee-f019cb68fc32",
+          "outputName": "web-desktop",
+          "taskName": "web-desktop",
+          "scenes": [
+            {
+              "url": "db://assets/Scene/game.scene",
+              "uuid": "10a52715-31ed-4423-acee-f019cb68fc32"
+            }
+          ],
+          "wasmCompressionMode": false,
+          "packages": {},
+          "__version__": "1.3.9",
+          "logDest": "project://temp/builder/log/web-desktop4-28-2025 16-08.log"
+        },
+        "time": "4-28-2025 16:08:17",
+        "dirty": false
+      },
+      "1745830381471": {
+        "type": "build",
+        "id": "1745830381471",
+        "progress": 1,
+        "state": "success",
+        "stage": "build",
+        "message": "2025-4-28 16:58:19 build success in 5 s!",
+        "detailMessage": "// ---- build task cocos-service：onAfterBuild ----\r",
+        "options": {
+          "name": "FirstGame",
+          "server": "",
+          "engineModulesConfigKey": "defaultConfig",
+          "platform": "wechatgame",
+          "buildPath": "project://build",
+          "debug": false,
+          "buildMode": "normal",
+          "mangleProperties": false,
+          "md5Cache": false,
+          "skipCompressTexture": false,
+          "sourceMaps": false,
+          "overwriteProjectSettings": {
+            "macroConfig": {
+              "cleanupImageCache": "on"
+            },
+            "includeModules": {
+              "physics": "inherit-project-setting",
+              "physics-2d": "inherit-project-setting",
+              "gfx-webgl2": "off"
+            }
+          },
+          "nativeCodeBundleMode": "wasm",
+          "polyfills": {
+            "asyncFunctions": false
+          },
+          "experimentalEraseModules": false,
+          "startSceneAssetBundle": false,
+          "bundleConfigs": [],
+          "inlineEnum": true,
+          "useBuiltinServer": false,
+          "md5CacheOptions": {
+            "excludes": [],
+            "includes": [],
+            "replaceOnly": [],
+            "handleTemplateMd5Link": true
+          },
+          "mainBundleIsRemote": false,
+          "mainBundleCompressionType": "merge_dep",
+          "useSplashScreen": true,
+          "bundleCommonChunk": false,
+          "packAutoAtlas": true,
+          "startScene": "10a52715-31ed-4423-acee-f019cb68fc32",
+          "outputName": "wechatgame",
+          "taskName": "wechatgame",
+          "scenes": [
+            {
+              "url": "db://assets/Scene/game.scene",
+              "uuid": "10a52715-31ed-4423-acee-f019cb68fc32"
+            }
+          ],
+          "wasmCompressionMode": false,
+          "packages": {},
+          "__version__": "1.3.9",
+          "logDest": "project://temp/builder/log/wechatgame4-28-2025 16-53.log"
+        },
+        "time": "4-28-2025 16:58:14",
+        "dirty": false
+      },
+      "1745841034446": {
+        "type": "build",
+        "id": "1745841034446",
+        "progress": 1,
+        "state": "failure",
+        "stage": "run",
+        "message": "2025-4-28 19:52:19 Run build stage[run] in package /Users/tiesc/Desktop/Study/FirstGame/build/android failed!",
+        "detailMessage": "Error: can not find apk at /Users/tiesc/Desktop/Study/FirstGame/build/android/proj/build/FirstGame/outputs/apk/release/FirstGame-release.apk, progress: 37%\r",
+        "options": {
+          "name": "FirstGame",
+          "server": "",
+          "engineModulesConfigKey": "defaultConfig",
+          "platform": "android",
+          "buildPath": "project://build",
+          "debug": false,
+          "buildMode": "normal",
+          "mangleProperties": false,
+          "md5Cache": false,
+          "skipCompressTexture": false,
+          "sourceMaps": false,
+          "overwriteProjectSettings": {
+            "macroConfig": {
+              "cleanupImageCache": "inherit-project-setting"
+            },
+            "includeModules": {
+              "physics": "inherit-project-setting",
+              "physics-2d": "inherit-project-setting",
+              "gfx-webgl2": "off"
+            }
+          },
+          "nativeCodeBundleMode": "wasm",
+          "polyfills": {
+            "asyncFunctions": false
+          },
+          "experimentalEraseModules": false,
+          "startSceneAssetBundle": false,
+          "bundleConfigs": [],
+          "inlineEnum": true,
+          "useBuiltinServer": false,
+          "md5CacheOptions": {
+            "excludes": [],
+            "includes": [],
+            "replaceOnly": [],
+            "handleTemplateMd5Link": true
+          },
+          "mainBundleIsRemote": false,
+          "mainBundleCompressionType": "merge_dep",
+          "useSplashScreen": true,
+          "bundleCommonChunk": false,
+          "packAutoAtlas": true,
+          "startScene": "10a52715-31ed-4423-acee-f019cb68fc32",
+          "outputName": "android",
+          "taskName": "android",
+          "scenes": [
+            {
+              "url": "db://assets/Scene/game.scene",
+              "uuid": "10a52715-31ed-4423-acee-f019cb68fc32"
+            }
+          ],
+          "wasmCompressionMode": false,
+          "packages": {},
+          "__version__": "1.3.9",
+          "logDest": "project://temp/builder/log/android4-28-2025 19-50.log"
+        },
+        "time": "4-28-2025 19:50:34",
+        "dirty": false
+      }
+    }
+  }
+}

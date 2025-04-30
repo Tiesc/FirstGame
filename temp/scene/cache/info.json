@@ -1,0 +1,11 @@
+{
+    "systemInfo": {
+        "arch": "arm64",
+        "cpu": "Apple M1",
+        "version": "Darwin Kernel Version 22.6.0: Thu Mar  6 21:45:52 PST 2025; root:xnu-8796.141.3.711.5~1/RELEASE_ARM64_T8103"
+    },
+    "sceneListMap": {
+        "d7ce598c-b04c-43e1-ba28-f7969d904761": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scene/HexGame.scene"
+    },
+    "deviceMd5": "ec162af2f37d8c323b11c8602c7526a2"
+}
