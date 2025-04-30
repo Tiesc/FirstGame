@@ -31,3 +31,55 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Cocos Creator 项目忽略文件模板
+
+# 构建输出
+/build/
+/release/
+
+# 临时文件
+/temp/
+/.tmp/
+
+# 缓存文件
+/.cache/
+/.local/
+
+# 编辑器设置
+/.settings/
+/.vscode/
+/.idea/
+
+# 依赖库
+/node_modules/
+/package-lock.json
+
+# 日志文件
+/logs/
+*.log
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# Cocos Creator 特定文件
+/assets/**/*.meta
+/library/
+/local/
+/project.json
+/settings/
+/versions/
+/backup/
+/backup_assets/
+/backup_library/
+/backup_local/
+/backup_project.json
+/backup_settings/
+/backup_versions/
+
+# 其他忽略文件
+*.bak
+*.tmp
+*.swp
+*.swo
