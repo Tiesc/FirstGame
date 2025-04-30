@@ -4,7 +4,7 @@ System.register(["__unresolved_0", "cc"], function (_export, _context) {
   var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, MapModel, _crd;
 
   function _reportPossibleCrUseOfHexagonLayout(extras) {
-    _reporterNs.report("HexagonLayout", "./MapData", _context.meta, extras);
+    _reporterNs.report("HexagonLayout", "../Enums/TileEnums", _context.meta, extras);
   }
 
   _export("MapModel", void 0);

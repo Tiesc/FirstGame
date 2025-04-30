@@ -19,21 +19,14 @@
       "time": 1745807727595.0198
     },
     "/Users/tiesc/Desktop/Study/FirstGame/assets/Scene": {
-      "time": 1745895070430.4368,
+      "time": 1745984906687.419,
       "uuid": "fdbb19ec-b8b2-4448-90d5-19be6f26ad14"
-    },
-    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scene/game.scene.meta": {
-      "time": 1745806801607.1301
-    },
-    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scene/game.scene": {
-      "time": 1745832322956.1875,
-      "uuid": "10a52715-31ed-4423-acee-f019cb68fc32"
     },
     "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts.meta": {
       "time": 1745807746506.9531
     },
     "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts": {
-      "time": 1745904086863.7634,
+      "time": 1745984257023.3237,
       "uuid": "8a1d7979-02d8-44f1-92bf-e03d7afdf1f2"
     },
     "/Users/tiesc/Desktop/Study/FirstGame/assets/Prefab/Box.prefab.meta": {
@@ -68,7 +61,7 @@
       "time": 1745895070433.924
     },
     "/Users/tiesc/Desktop/Study/FirstGame/assets/Scene/HexGame.scene": {
-      "time": 1745926052638.2876,
+      "time": 1745991372893.9385,
       "uuid": "d7ce598c-b04c-43e1-ba28-f7969d904761"
     },
     "/Users/tiesc/Desktop/Study/FirstGame/assets/resources.meta": {
@@ -89,15 +82,8 @@
       "time": 1745898035826.726
     },
     "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other": {
-      "time": 1745925956091.3682,
+      "time": 1745984937856.1252,
       "uuid": "fc17ab74-3cb9-4021-a985-24da0591ad9e"
-    },
-    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/GameManager.ts.meta": {
-      "time": 1745810948606.593
-    },
-    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/GameManager.ts": {
-      "time": 1745820881884.2014,
-      "uuid": "5cf00672-6964-416e-a88c-bf40c20b6da1"
     },
     "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/HexMetrics.ts.meta": {
       "time": 1745896604753.6172
@@ -105,13 +91,6 @@
     "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/HexMetrics.ts": {
       "time": 1745896663823.7285,
       "uuid": "a258e24c-cd6c-4b55-8339-4979357ab187"
-    },
-    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/PlayerController.ts.meta": {
-      "time": 1745807240779.2317
-    },
-    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/PlayerController.ts": {
-      "time": 1745825921685.7664,
-      "uuid": "d0ce9342-cd16-4e91-82df-3505dc9d1e04"
     },
     "/Users/tiesc/Desktop/Study/FirstGame/assets/Config.meta": {
       "time": 1745898084068.8472
@@ -1348,22 +1327,22 @@
       "time": 1745922496428.1357
     },
     "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/MapController.ts": {
-      "time": 1745924145454.0051,
+      "time": 1745991709322.4907,
       "uuid": "52eadd79-b1ad-471c-84c4-07c1d8ba1041"
     },
     "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/MapModel.ts": {
-      "time": 1745924023396.2495,
+      "time": 1745990626715.9521,
       "uuid": "bf2c9a92-8a85-4f65-8de2-dd9010789872"
     },
     "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/MapView.ts": {
-      "time": 1745924032770.954,
+      "time": 1745991654975.4446,
       "uuid": "9b48e2d9-abbf-4d38-b3aa-ff43444f263c"
     },
     "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/MapData.ts.meta": {
       "time": 1745924150982.0144
     },
     "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/MapData.ts": {
-      "time": 1745924005458.6655,
+      "time": 1745991138227.1672,
       "uuid": "70f8a71e-d7b1-4b63-9dd8-05a68b9f5ee6"
     },
     "/Users/tiesc/Desktop/Study/FirstGame/assets/Prefab/Hexagon.prefab.meta": {
@@ -1393,6 +1372,62 @@
     "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/HexMap.ts": {
       "time": 1745925964360.9353,
       "uuid": "172839a7-d730-4aaa-a01e-bab8f5125266"
+    },
+    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles.meta": {
+      "time": 1745983267319.0698
+    },
+    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles": {
+      "time": 1745990857701.1626,
+      "uuid": "0e5924e5-7a94-4b95-9639-961f2307d7b4"
+    },
+    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Enums.meta": {
+      "time": 1745984215567.6929
+    },
+    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Enums": {
+      "time": 1745984574926.4683,
+      "uuid": "266f3710-fc99-4526-a897-062d69aff8b6"
+    },
+    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Components.meta": {
+      "time": 1745984242541.6064
+    },
+    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Components": {
+      "time": 1745984574925.9927,
+      "uuid": "11d03dfa-0bd9-4b44-8b0e-615caa22eb6b"
+    },
+    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Services.meta": {
+      "time": 1745984257024.337
+    },
+    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Services": {
+      "time": 1745984574926.7302,
+      "uuid": "d044156a-3b42-4f5e-923c-e025f0ced144"
+    },
+    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Components/HexagonComponent.ts.meta": {
+      "time": 1745984574932.1963
+    },
+    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Enums/TileEnums.ts.meta": {
+      "time": 1745984574934.4917
+    },
+    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Services/MapLayoutService.ts.meta": {
+      "time": 1745984574934.7527
+    },
+    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Components/HexagonComponent.ts": {
+      "time": 1745984597253.164,
+      "uuid": "760746dc-2898-40f7-95ff-f77fedc69f87"
+    },
+    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Enums/TileEnums.ts": {
+      "time": 1745984411193.291,
+      "uuid": "86833591-e141-4777-aab8-5a0c52611a53"
+    },
+    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Services/MapLayoutService.ts": {
+      "time": 1745984411193.26,
+      "uuid": "e5234d9d-795e-4c30-93d2-e0e0a56e2524"
+    },
+    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles/Tile.ts.meta": {
+      "time": 1745983323588.4006
+    },
+    "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles/Tile.ts": {
+      "time": 1745990991562.1472,
+      "uuid": "70d830cc-0daf-46b5-805e-c00a8d1ea0ea"
     }
   },
   "missing": {
@@ -1407,14 +1442,14 @@
       "removeTime": 1745807731639
     },
     "10a52715-31ed-4423-acee-f019cb68fc32": {
-      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/game.scene",
-      "time": 1745807023603.478,
-      "removeTime": 1745807735140
+      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scene/game.scene",
+      "time": 1745832322956.1875,
+      "removeTime": 1745984906688
     },
     "d0ce9342-cd16-4e91-82df-3505dc9d1e04": {
-      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/PlayerController.ts",
+      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/PlayerController.ts",
       "time": 1745825921685.7664,
-      "removeTime": 1745898040651
+      "removeTime": 1745984937857
     },
     "8a4508c7-eec1-42f3-bbe1-33ce79fbc3fe": {
       "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Animation/oneStep-001.anim",
@@ -1567,9 +1602,9 @@
       "removeTime": 1745897438432
     },
     "5cf00672-6964-416e-a88c-bf40c20b6da1": {
-      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/GameManager.ts",
+      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/GameManager.ts",
       "time": 1745820881884.2014,
-      "removeTime": 1745898040648
+      "removeTime": 1745984930843
     },
     "be809694-1cd4-4344-b97a-52ff4bbd7311": {
       "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/HexCell.ts",
@@ -5080,6 +5115,76 @@
       "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/HexCell2D-001.ts",
       "time": 1745925886139.4414,
       "removeTime": 1745925894583
+    },
+    "0e5924e5-7a94-4b95-9639-961f2307d7b4": {
+      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tile",
+      "time": 1745983267316.927,
+      "removeTime": 1745983274085
+    },
+    "319d762e-bb33-4661-924a-621d0b1eaba4": {
+      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Scripts",
+      "time": 1745983701822.4114,
+      "removeTime": 1745983854267
+    },
+    "6bf25c92-260b-4162-a8a2-244e73b16dfb": {
+      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Scripts/Tiles",
+      "time": 1745983701826.1018,
+      "removeTime": 1745983854267
+    },
+    "f993c756-9aec-47cd-b9ee-f32d5e682b13": {
+      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Scripts/Tiles/TileData.ts",
+      "time": 1745983698952.0356,
+      "removeTime": 1745983854267
+    },
+    "266f3710-fc99-4526-a897-062d69aff8b6": {
+      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Enms",
+      "time": 1745984215565.2625,
+      "removeTime": 1745984228768
+    },
+    "521a7eb9-8e09-428e-a164-64739052ae21": {
+      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles/Users",
+      "time": 1745984574927.1238,
+      "removeTime": 1745984715622
+    },
+    "783b2d3e-ab16-4b57-bee2-a3c0d1962f8c": {
+      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles/Users/tiesc",
+      "time": 1745984574927.301,
+      "removeTime": 1745984715623
+    },
+    "b1d3c949-0254-41f9-804d-6761e5e4141b": {
+      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles/Users/tiesc/Desktop",
+      "time": 1745984574927.4841,
+      "removeTime": 1745984715623
+    },
+    "627e2335-6a3e-4227-97de-79fcea994606": {
+      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles/Users/tiesc/Desktop/Study",
+      "time": 1745984574927.6538,
+      "removeTime": 1745984715623
+    },
+    "2d74bf67-b0a6-47c8-90b3-dea0afc0b038": {
+      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles/Users/tiesc/Desktop/Study/FirstGame",
+      "time": 1745984574927.8198,
+      "removeTime": 1745984715623
+    },
+    "ef6fdfcb-343f-4a1b-befb-2fa646983ea2": {
+      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles/Users/tiesc/Desktop/Study/FirstGame/assets",
+      "time": 1745984574927.9805,
+      "removeTime": 1745984715623
+    },
+    "8807ce22-f5ba-474b-b3e6-912aaeccf93b": {
+      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts",
+      "time": 1745984574928.1562,
+      "removeTime": 1745984715623
+    },
+    "b869e4fb-bc3e-44b0-ba64-856c2e9d3e70": {
+      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles",
+      "time": 1745984284826.1687,
+      "removeTime": 1745984715623
+    },
+    "70d830cc-0daf-46b5-805e-c00a8d1ea0ea": {
+      "path": "/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles/TileData.ts",
+      "time": 1745990777998.5652,
+      "removeTime": 1745990857702
     }
   }
 }

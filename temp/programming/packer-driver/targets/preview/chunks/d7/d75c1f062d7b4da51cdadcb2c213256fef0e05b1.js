@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, SpriteFrame, assetManager, view, Vec3, MapModel, MapView, HexagonLayout, HexagonSpriteFrame, MapData, _dec, _dec2, _class, _class2, _descriptor, _crd, ccclass, property, MapController;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, SpriteFrame, assetManager, view, Vec3, MapModel, MapView, MapData, HexagonLayout, HexagonSpriteFrame, Tile, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, MapController;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -17,16 +17,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("MapView", "./MapView", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfMapData(extras) {
+    _reporterNs.report("MapData", "./MapData", _context.meta, extras);
+  }
+
   function _reportPossibleCrUseOfHexagonLayout(extras) {
-    _reporterNs.report("HexagonLayout", "./MapData", _context.meta, extras);
+    _reporterNs.report("HexagonLayout", "../Enums/TileEnums", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfHexagonSpriteFrame(extras) {
-    _reporterNs.report("HexagonSpriteFrame", "./MapData", _context.meta, extras);
+    _reporterNs.report("HexagonSpriteFrame", "../Enums/TileEnums", _context.meta, extras);
   }
 
-  function _reportPossibleCrUseOfMapData(extras) {
-    _reporterNs.report("MapData", "./MapData", _context.meta, extras);
+  function _reportPossibleCrUseOfTile(extras) {
+    _reporterNs.report("Tile", "../Tiles/Tile", _context.meta, extras);
   }
 
   return {
@@ -47,17 +51,22 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     }, function (_unresolved_3) {
       MapView = _unresolved_3.MapView;
     }, function (_unresolved_4) {
-      HexagonLayout = _unresolved_4.HexagonLayout;
-      HexagonSpriteFrame = _unresolved_4.HexagonSpriteFrame;
       MapData = _unresolved_4.MapData;
+    }, function (_unresolved_5) {
+      HexagonLayout = _unresolved_5.HexagonLayout;
+      HexagonSpriteFrame = _unresolved_5.HexagonSpriteFrame;
+    }, function (_unresolved_6) {
+      Tile = _unresolved_6.Tile;
     }],
     execute: function () {
       _crd = true;
 
-      _cclegacy._RF.push({}, "52ead15sa1HHITEB8HYuhBB", "MapController", undefined);
+      _cclegacy._RF.push({}, "52ead15sa1HHITEB8HYuhBB", "MapController", undefined); // MapController.ts
+
 
       __checkObsolete__(['_decorator', 'Component', 'Node', 'SpriteFrame', 'assetManager', 'view', 'Size', 'Vec3']);
 
+      // 新增导入
       ({
         ccclass,
         property
@@ -68,6 +77,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           error: Error()
         }), HexagonLayout) : HexagonLayout,
         tooltip: '六边形排列方式'
+      }), _dec3 = property({
+        type: _crd && Tile === void 0 ? (_reportPossibleCrUseOfTile({
+          error: Error()
+        }), Tile) : Tile,
+        tooltip: 'Tile 配置组件'
       }), _dec(_class = (_class2 = class MapController extends Component {
         constructor() {
           super(...arguments);
@@ -75,15 +89,24 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           _initializerDefineProperty(this, "layout", _descriptor, this);
 
           // 默认水平排列
+          _initializerDefineProperty(this, "tile", _descriptor2, this);
+
+          // 用于在编辑器中拖拽赋值
           this.model = void 0;
           this.view = void 0;
           this.mapData = void 0;
         }
 
         start() {
+          var _this$tile$hexWidth, _this$tile, _this$tile$hexHeight, _this$tile2;
+
+          // 获取六边形尺寸（优先使用外部 Tile，否则使用默认值）
+          var hexWidth = (_this$tile$hexWidth = (_this$tile = this.tile) == null ? void 0 : _this$tile.hexWidth) != null ? _this$tile$hexWidth : 120;
+          var hexHeight = (_this$tile$hexHeight = (_this$tile2 = this.tile) == null ? void 0 : _this$tile2.hexHeight) != null ? _this$tile$hexHeight : 140; // 初始化各模块并传入 hex 宽高
+
           this.mapData = new (_crd && MapData === void 0 ? (_reportPossibleCrUseOfMapData({
             error: Error()
-          }), MapData) : MapData)(this.layout);
+          }), MapData) : MapData)(this.layout, hexWidth, hexHeight);
           this.model = new (_crd && MapModel === void 0 ? (_reportPossibleCrUseOfMapModel({
             error: Error()
           }), MapModel) : MapModel)(this.layout);
@@ -101,9 +124,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             var {
               cols,
               rows
-            } = this.mapData.calculateLayout(screenSizeVec3); // 生成六边形节点
+            } = this.mapData.calculateLayout(screenSizeVec3); // 生成六边形节点，将 hex 宽高传入 generateHexagons
 
-            this.view.generateHexagons(this.model, cols, rows, this.layout);
+            this.view.generateHexagons(this.model, cols, rows, this.layout, hexWidth, hexHeight);
           }).catch(err => {
             console.error('资源加载失败:', err);
           });
@@ -171,6 +194,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           return (_crd && HexagonLayout === void 0 ? (_reportPossibleCrUseOfHexagonLayout({
             error: Error()
           }), HexagonLayout) : HexagonLayout).Horizontal;
+        }
+      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "tile", [_dec3], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
         }
       })), _class2)) || _class));
 

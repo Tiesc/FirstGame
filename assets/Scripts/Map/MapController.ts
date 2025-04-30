@@ -1,7 +1,10 @@
+// MapController.ts
 import { _decorator, Component, Node, SpriteFrame, assetManager, view, Size, Vec3 } from 'cc';
 import { MapModel } from './MapModel';
 import { MapView } from './MapView';
-import { HexagonLayout, HexagonSpriteFrame, MapData } from './MapData';
+import { MapData } from './MapData';
+import { HexagonLayout, HexagonSpriteFrame } from '../Enums/TileEnums';
+import { Tile } from '../Tiles/Tile'; // 新增导入
 
 const { ccclass, property } = _decorator;
 
@@ -10,12 +13,20 @@ export class MapController extends Component {
     @property({ type: HexagonLayout, tooltip: '六边形排列方式' })
     layout: HexagonLayout = HexagonLayout.Horizontal; // 默认水平排列
 
+    @property({ type: Tile, tooltip: 'Tile 配置组件' })
+    tile: Tile | null = null; // 用于在编辑器中拖拽赋值
+
     private model: MapModel;
     private view: MapView;
     private mapData: MapData;
 
     start() {
-        this.mapData = new MapData(this.layout);
+        // 获取六边形尺寸（优先使用外部 Tile，否则使用默认值）
+        const hexWidth = this.tile?.hexWidth ?? 120;
+        const hexHeight = this.tile?.hexHeight ?? 140;
+
+        // 初始化各模块并传入 hex 宽高
+        this.mapData = new MapData(this.layout, hexWidth, hexHeight);
         this.model = new MapModel(this.layout);
         this.view = new MapView(this.node);
 
@@ -31,8 +42,8 @@ export class MapController extends Component {
             // 计算行列数
             const { cols, rows } = this.mapData.calculateLayout(screenSizeVec3);
 
-            // 生成六边形节点
-            this.view.generateHexagons(this.model, cols, rows, this.layout);
+            // 生成六边形节点，将 hex 宽高传入 generateHexagons
+            this.view.generateHexagons(this.model, cols, rows, this.layout, hexWidth, hexHeight);
         }).catch(err => {
             console.error('资源加载失败:', err);
         });

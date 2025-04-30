@@ -1,59 +1,52 @@
-System.register(["cc"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, MapData, _crd, HexagonLayout, HexagonSpriteFrame;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, HexagonLayout, MapData, _crd;
+
+  function _reportPossibleCrUseOfHexagonLayout(extras) {
+    _reporterNs.report("HexagonLayout", "../Enums/TileEnums", _context.meta, extras);
+  }
 
   _export("MapData", void 0);
 
   return {
-    setters: [function (_cc) {
+    setters: [function (_unresolved_) {
+      _reporterNs = _unresolved_;
+    }, function (_cc) {
       _cclegacy = _cc.cclegacy;
       __checkObsolete__ = _cc.__checkObsolete__;
       __checkObsoleteInNamespace__ = _cc.__checkObsoleteInNamespace__;
+    }, function (_unresolved_2) {
+      HexagonLayout = _unresolved_2.HexagonLayout;
     }],
     execute: function () {
       _crd = true;
 
       _cclegacy._RF.push({}, "70f8ace17FLY53YBaaLn17m", "MapData", undefined);
 
-      // 定义排列方式枚举
+      // MapData.ts
       __checkObsolete__(['Vec3']);
 
-      _export("HexagonLayout", HexagonLayout = /*#__PURE__*/function (HexagonLayout) {
-        HexagonLayout[HexagonLayout["Horizontal"] = 0] = "Horizontal";
-        HexagonLayout[HexagonLayout["Vertical"] = 1] = "Vertical";
-        return HexagonLayout;
-      }({})); // 定义 SpriteFrame 路径枚举
-
-
-      _export("HexagonSpriteFrame", HexagonSpriteFrame = /*#__PURE__*/function (HexagonSpriteFrame) {
-        HexagonSpriteFrame["Dirt01"] = "Tiles/Terrain/Dirt/dirt_01/spriteFrame";
-        HexagonSpriteFrame["Dirt02"] = "Tiles/Terrain/Dirt/dirt_02/spriteFrame";
-        HexagonSpriteFrame["Dirt03"] = "Tiles/Terrain/Dirt/dirt_03/spriteFrame";
-        HexagonSpriteFrame["Dirt04"] = "Tiles/Terrain/Dirt/dirt_04/spriteFrame";
-        return HexagonSpriteFrame;
-      }({}));
-
       _export("MapData", MapData = class MapData {
-        // 六边形高度
-        constructor(layout) {
-          this.hexWidth = 120;
-          // 六边形宽度
-          this.hexHeight = 140;
+        constructor(layout, hexWidth = 120, hexHeight = 140) {
+          this.hexWidth = void 0;
+          this.hexHeight = void 0;
           this.layout = layout;
+          this.hexWidth = hexWidth;
+          this.hexHeight = hexHeight;
         }
 
         calculateLayout(screenSize) {
           let cols, rows;
 
-          if (this.layout === HexagonLayout.Horizontal) {
-            cols = Math.floor(screenSize.x / this.hexWidth) + 1; // 每行六边形数
-
-            rows = Math.floor(screenSize.y / (this.hexHeight * 0.75)) + 1; // 每列六边形数
+          if (this.layout === (_crd && HexagonLayout === void 0 ? (_reportPossibleCrUseOfHexagonLayout({
+            error: Error()
+          }), HexagonLayout) : HexagonLayout).Horizontal) {
+            cols = Math.floor(screenSize.x / this.hexWidth) + 1;
+            rows = Math.floor(screenSize.y / (this.hexHeight * 0.75)) + 1;
           } else {
-            cols = Math.floor(screenSize.x / (this.hexWidth * 0.75)) + 1; // 每行六边形数
-
-            rows = Math.floor(screenSize.y / this.hexHeight) + 1; // 每列六边形数
+            cols = Math.floor(screenSize.x / (this.hexWidth * 0.75)) + 1;
+            rows = Math.floor(screenSize.y / this.hexHeight) + 1;
           }
 
           return {

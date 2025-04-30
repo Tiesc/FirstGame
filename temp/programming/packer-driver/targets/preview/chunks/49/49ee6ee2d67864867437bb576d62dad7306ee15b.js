@@ -8,7 +8,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
   }
 
   function _reportPossibleCrUseOfHexagonLayout(extras) {
-    _reporterNs.report("HexagonLayout", "./MapData", _context.meta, extras);
+    _reporterNs.report("HexagonLayout", "../Enums/TileEnums", _context.meta, extras);
   }
 
   _export("MapView", void 0);
@@ -29,7 +29,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
     execute: function () {
       _crd = true;
 
-      _cclegacy._RF.push({}, "9b48eLZq79NOLOq/0NETyY8", "MapView", undefined);
+      _cclegacy._RF.push({}, "9b48eLZq79NOLOq/0NETyY8", "MapView", undefined); // MapView.ts
+
 
       __checkObsolete__(['Node', 'Sprite', 'SpriteFrame', 'Vec3']);
 
@@ -38,8 +39,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.node = void 0;
           this.node = node;
         }
+        /**
+         * 根据模型数据生成六边形地图
+         * @param model 地图数据模型
+         * @param cols 列数
+         * @param rows 行数
+         * @param layout 排列方式（水平或垂直）
+         * @param hexWidth 六边形宽度
+         * @param hexHeight 六边形高度
+         */
 
-        generateHexagons(model, cols, rows, layout) {
+
+        generateHexagons(model, cols, rows, layout, hexWidth, hexHeight) {
           var _this = this;
 
           if (layout === void 0) {
@@ -48,9 +59,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
             }), HexagonLayout) : HexagonLayout).Horizontal;
           }
 
-          var hexWidth = 120; // 六边形宽度
+          if (hexWidth === void 0) {
+            hexWidth = 120;
+          }
 
-          var hexHeight = 140; // 六边形高度
+          if (hexHeight === void 0) {
+            hexHeight = 140;
+          }
 
           var tileMap = model.getTileMap();
           var spriteFrames = model.getSpriteFrames();
@@ -60,24 +75,19 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
               var _tileMap$row;
 
               var spriteFramePath = (_tileMap$row = tileMap[row]) == null ? void 0 : _tileMap$row[col];
-
-              if (!spriteFramePath) {
-                return 0; // continue
-              }
+              if (!spriteFramePath) return 0; // continue
 
               var spriteFrame = spriteFrames.find(sf => sf.name === spriteFramePath);
               if (!spriteFrame) return 0; // continue
-              // 创建新节点
+              // 创建新节点并设置 Sprite
 
-              var newNode = new Node("Hexagon_" + row + "_" + col); // 添加 Sprite 组件
-
-              var sprite = newNode.addComponent(Sprite); // 设置 SpriteFrame
-
-              sprite.spriteFrame = spriteFrame; // 计算节点位置，传入 layout 参数
+              var newNode = new Node("Hexagon_" + row + "_" + col);
+              var sprite = newNode.addComponent(Sprite);
+              sprite.spriteFrame = spriteFrame; // 计算位置
 
               var position = _this.calculatePosition(col, row, hexWidth, hexHeight, layout);
 
-              newNode.setPosition(position); // 将新节点添加到当前节点下
+              newNode.setPosition(position); // 添加到场景中
 
               _this.node.addChild(newNode);
             },
@@ -89,20 +99,31 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
             }
           }
         }
+        /**
+         * 计算六边形节点的位置
+         * @param col 当前列
+         * @param row 当前行
+         * @param hexWidth 六边形宽度
+         * @param hexHeight 六边形高度
+         * @param layout 排列方式
+         * @returns 世界坐标 Vec3
+         */
+
 
         calculatePosition(col, row, hexWidth, hexHeight, layout) {
-          var x, y;
+          var x = 0,
+              y = 0;
 
           if (layout === (_crd && HexagonLayout === void 0 ? (_reportPossibleCrUseOfHexagonLayout({
             error: Error()
           }), HexagonLayout) : HexagonLayout).Horizontal) {
-            x = col * hexWidth + row % 2 * (hexWidth / 2); // 水平排列，奇数行偏移
+            x = col * hexWidth + row % 2 * (hexWidth / 2); // 奇数行偏移
 
-            y = row * hexHeight * 0.75; // 垂直方向间距为高度的 0.75 倍
+            y = row * hexHeight * 0.75; // 垂直间距为 0.75 倍高度
           } else {
-            x = col * hexWidth * 0.75; // 水平方向间距为宽度的 0.75 倍
+            x = col * hexWidth * 0.75; // 水平间距为 0.75 倍宽度
 
-            y = row * hexHeight + col % 2 * (hexHeight / 2); // 垂直排列，奇数列偏移
+            y = row * hexHeight + col % 2 * (hexHeight / 2); // 奇数列偏移
           }
 
           return new Vec3(x, y, 0);

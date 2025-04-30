@@ -1,11 +1,11 @@
 import { SpriteFrame } from 'cc';
-import { HexagonLayout, HexagonSpriteFrame } from './MapData';
+import { HexagonLayout, HexagonSpriteFrame } from '../Enums/TileEnums';
 
 export class MapModel {
     private tileMap: string[][] = [];
     private spriteFrames: SpriteFrame[] = [];
 
-    constructor(private layout: HexagonLayout) {}
+    constructor(private layout: HexagonLayout) { }
 
     public getTileMap(): string[][] {
         return this.tileMap;
