@@ -162,13 +162,11 @@
     "url": "db://assets/Scene/HexGame.scene",
     "value": {
       "depends": [
-        "d7ce598c-b04c-43e1-ba28-f7969d904761",
-        "4b6ece17-d25f-4ca0-aaa5-b68612a00700"
+        "d7ce598c-b04c-43e1-ba28-f7969d904761"
       ],
       "dependScripts": [
-        "172839a7-d730-4aaa-a01e-bab8f5125266",
         "52eadd79-b1ad-471c-84c4-07c1d8ba1041",
-        "70d830cc-0daf-46b5-805e-c00a8d1ea0ea"
+        "ce4c4a0d-2bf7-460d-a7d9-1a062bd7ed38"
       ]
     },
     "versionCode": 1
@@ -15439,17 +15437,17 @@
     "versionCode": 1
   },
   "52eadd79-b1ad-471c-84c4-07c1d8ba1041": {
-    "url": "db://assets/Scripts/Map/MapController.ts",
+    "url": "db://assets/Scripts/Controllers/MapController.ts",
     "value": {},
     "versionCode": 1
   },
   "bf2c9a92-8a85-4f65-8de2-dd9010789872": {
-    "url": "db://assets/Scripts/Map/MapModel.ts",
+    "url": "db://assets/Scripts/Models/MapModel.ts",
     "value": {},
     "versionCode": 1
   },
   "9b48e2d9-abbf-4d38-b3aa-ff43444f263c": {
-    "url": "db://assets/Scripts/Map/MapView.ts",
+    "url": "db://assets/Scripts/Views/MapView.ts",
     "value": {},
     "versionCode": 1
   },
@@ -15665,6 +15663,233 @@
   },
   "b869e4fb-bc3e-44b0-ba64-856c2e9d3e70": {
     "url": "db://assets/Scripts/Tiles/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles",
+    "value": {},
+    "versionCode": 1
+  },
+  "7169034c-beec-4577-9369-d0bd9ee8d5b5": {
+    "url": "db://assets/Scripts/Configs/HexagonSpriteConfig.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "196a47c1-37a0-4424-ba4a-459918944539": {
+    "url": "db://assets/Scripts/Configs",
+    "value": {},
+    "versionCode": 1
+  },
+  "6084ea94-ce1f-463a-b285-fb00987998ee": {
+    "url": "db://assets/Scripts/Map/Users",
+    "value": {},
+    "versionCode": 1
+  },
+  "4e773e6f-08f9-496b-9af6-b861ca5886c9": {
+    "url": "db://assets/Scripts/Map/Users/tiesc",
+    "value": {},
+    "versionCode": 1
+  },
+  "461bbd53-bbf9-4f6f-8e39-304f4327d694": {
+    "url": "db://assets/Scripts/Map/Users/tiesc/Desktop",
+    "value": {},
+    "versionCode": 1
+  },
+  "e58feb93-13b6-45d0-b7cb-55c2f26bd1ef": {
+    "url": "db://assets/Scripts/Map/Users/tiesc/Desktop/Study",
+    "value": {},
+    "versionCode": 1
+  },
+  "a66630f9-9764-488e-bf78-9cefd79c87f6": {
+    "url": "db://assets/Scripts/Map/Users/tiesc/Desktop/Study/FirstGame",
+    "value": {},
+    "versionCode": 1
+  },
+  "a08608e4-f3be-45b1-8296-6bdc46518692": {
+    "url": "db://assets/Scripts/Map/Users/tiesc/Desktop/Study/FirstGame/assets",
+    "value": {},
+    "versionCode": 1
+  },
+  "3acabfc5-1150-422f-87fe-378de218f961": {
+    "url": "db://assets/Scripts/Map/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts",
+    "value": {},
+    "versionCode": 1
+  },
+  "34bfce19-285a-4b00-9015-da7abf8c8c27": {
+    "url": "db://assets/Scripts/Map/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map",
+    "value": {},
+    "versionCode": 1
+  },
+  "895ae1a3-7118-475b-879e-85371c146afe": {
+    "url": "db://assets/Scripts/Configs/HexagonSpriteFrames.json",
+    "value": {},
+    "versionCode": 1
+  },
+  "0667d696-3666-4b0c-8382-5fd241d9ea6e": {
+    "url": "db://assets/Scripts/Configs/TileProperties.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "c0b095be-97ca-4096-af74-2ba8d867e1dd": {
+    "url": "db://assets/Scripts/Enums/Users",
+    "value": {},
+    "versionCode": 1
+  },
+  "5d27888a-d420-48ab-80d3-48aed366fb9d": {
+    "url": "db://assets/Scripts/Enums/Users/tiesc",
+    "value": {},
+    "versionCode": 1
+  },
+  "3d7c06f8-e20e-4c38-aed0-4e100f1b0245": {
+    "url": "db://assets/Scripts/Enums/Users/tiesc/Desktop",
+    "value": {},
+    "versionCode": 1
+  },
+  "c3ebee9a-7b66-42d1-854e-8b4cb4250f97": {
+    "url": "db://assets/Scripts/Enums/Users/tiesc/Desktop/Study",
+    "value": {},
+    "versionCode": 1
+  },
+  "44c55b03-4d3e-48ad-9385-aa4dea44eea6": {
+    "url": "db://assets/Scripts/Enums/Users/tiesc/Desktop/Study/FirstGame",
+    "value": {},
+    "versionCode": 1
+  },
+  "5cc29b54-b9b4-4ed1-a3f6-65839148c04c": {
+    "url": "db://assets/Scripts/Enums/Users/tiesc/Desktop/Study/FirstGame/assets",
+    "value": {},
+    "versionCode": 1
+  },
+  "6a037b9d-aad4-47d0-a573-8b5bd1cce1aa": {
+    "url": "db://assets/Scripts/Enums/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts",
+    "value": {},
+    "versionCode": 1
+  },
+  "5ee33cf5-9dba-41e1-8b7d-0f7309568733": {
+    "url": "db://assets/Scripts/Enums/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Enums",
+    "value": {},
+    "versionCode": 1
+  },
+  "2448953a-9bc6-4459-8727-037e1b848f76": {
+    "url": "db://assets/Scripts/Models/HexTileModel.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "3f0f6ec6-8f1b-4285-934c-d196cae3166b": {
+    "url": "db://assets/Scripts/Enums/Users",
+    "value": {},
+    "versionCode": 1
+  },
+  "ccf1d62e-26d8-44eb-b949-c26d8ab342a0": {
+    "url": "db://assets/Scripts/Models",
+    "value": {},
+    "versionCode": 1
+  },
+  "6fcad80b-2445-45d8-9de2-2b26ea953c47": {
+    "url": "db://assets/Scripts/Enums/Users/tiesc",
+    "value": {},
+    "versionCode": 1
+  },
+  "d7ee83b2-42d1-4ade-a790-6069b3dd30da": {
+    "url": "db://assets/Scripts/Enums/Users/tiesc/Desktop",
+    "value": {},
+    "versionCode": 1
+  },
+  "09ef3cb9-e5a6-4a76-b985-c48762fb83da": {
+    "url": "db://assets/Scripts/Enums/Users/tiesc/Desktop/Study",
+    "value": {},
+    "versionCode": 1
+  },
+  "22bd78d4-dae6-4ca6-ab4d-15b413bfc558": {
+    "url": "db://assets/Scripts/Enums/Users/tiesc/Desktop/Study/FirstGame",
+    "value": {},
+    "versionCode": 1
+  },
+  "4a19805c-7afb-417b-a9e9-501e58c1ca7c": {
+    "url": "db://assets/Scripts/Enums/Users/tiesc/Desktop/Study/FirstGame/assets",
+    "value": {},
+    "versionCode": 1
+  },
+  "d6015ca4-3a4a-497c-a037-8cd51c63e0d0": {
+    "url": "db://assets/Scripts/Enums/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts",
+    "value": {},
+    "versionCode": 1
+  },
+  "1dd1fc8f-9c6f-4d48-ae44-56ee03e3f306": {
+    "url": "db://assets/Scripts/Enums/Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Enums",
+    "value": {},
+    "versionCode": 1
+  },
+  "b41ecbb3-2b04-4635-ae90-eadb5223a9e5": {
+    "url": "db://assets/Scripts/Enums/View",
+    "value": {},
+    "versionCode": 1
+  },
+  "9751cfdb-91ed-43f7-be6b-49b2b3340bbb": {
+    "url": "db://assets/Scripts/Core",
+    "value": {},
+    "versionCode": 1
+  },
+  "2fcdc03c-513c-4843-8659-15805e0566ba": {
+    "url": "db://assets/Scripts/Managers",
+    "value": {},
+    "versionCode": 1
+  },
+  "5578b466-1ec0-4894-8754-a9f571a42e2f": {
+    "url": "db://assets/Scripts/Core/GameConfig.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "fe43ad6e-78b3-400b-bbf1-bfd65cb34364": {
+    "url": "db://assets/Scripts/Core/EventCenter.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "6997e794-0fd6-4792-8743-028df0d999da": {
+    "url": "db://assets/Scripts/Views",
+    "value": {},
+    "versionCode": 1
+  },
+  "68e78d6b-33b9-4b72-a83e-58a3b277aae1": {
+    "url": "db://assets/Scripts/Controllers",
+    "value": {},
+    "versionCode": 1
+  },
+  "c87647a0-8720-43b6-b085-aa8f67029ff4": {
+    "url": "db://assets/Scripts/Data",
+    "value": {},
+    "versionCode": 1
+  },
+  "6dea8eb6-0186-4a29-ab29-1c90b51de4ae": {
+    "url": "db://assets/Scripts/Data/tile_config.js.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "0b3a8659-1b18-48b4-8a2d-56aa6ec50a57": {
+    "url": "db://assets/resources/tile_config.json",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "a4e9a414-4707-4327-8442-692a64a4bef9": {
+    "url": "db://assets/Scripts/Services/ResourceLoaderService.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "cb2791fe-4c3f-495d-b680-b52132a0d0d8": {
+    "url": "db://assets/Scripts/Scenes",
+    "value": {},
+    "versionCode": 1
+  },
+  "1efbcbac-dc7e-46e7-a68d-6eba608be9e5": {
+    "url": "db://assets/Scripts/Scenes/MainSceneController1.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "1729a1d9-f21a-4a9a-bb49-113d0a5d3d4e": {
+    "url": "db://assets/Scripts/Scenes/MainSceneController.prefab",
+    "value": {},
+    "versionCode": 1
+  },
+  "ce4c4a0d-2bf7-460d-a7d9-1a062bd7ed38": {
+    "url": "db://assets/Scripts/Scenes/MainSceneController.ts",
     "value": {},
     "versionCode": 1
   }

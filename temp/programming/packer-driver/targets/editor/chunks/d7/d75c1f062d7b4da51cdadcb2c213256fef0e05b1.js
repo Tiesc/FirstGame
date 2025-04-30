@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, SpriteFrame, assetManager, view, Vec3, MapModel, MapView, MapData, HexagonLayout, HexagonSpriteFrame, Tile, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, MapController;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, SpriteFrame, assetManager, view, Vec3, MapModel, MapView, MapData, HexagonLayout, Tile, HexagonSpriteConfig, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _crd, ccclass, property, MapController;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -25,12 +25,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("HexagonLayout", "../Enums/TileEnums", _context.meta, extras);
   }
 
-  function _reportPossibleCrUseOfHexagonSpriteFrame(extras) {
-    _reporterNs.report("HexagonSpriteFrame", "../Enums/TileEnums", _context.meta, extras);
-  }
-
   function _reportPossibleCrUseOfTile(extras) {
     _reporterNs.report("Tile", "../Tiles/Tile", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfHexagonSpriteConfig(extras) {
+    _reporterNs.report("HexagonSpriteConfig", "../Configs/HexagonSpriteConfig", _context.meta, extras);
   }
 
   return {
@@ -54,9 +54,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       MapData = _unresolved_4.MapData;
     }, function (_unresolved_5) {
       HexagonLayout = _unresolved_5.HexagonLayout;
-      HexagonSpriteFrame = _unresolved_5.HexagonSpriteFrame;
     }, function (_unresolved_6) {
       Tile = _unresolved_6.Tile;
+    }, function (_unresolved_7) {
+      HexagonSpriteConfig = _unresolved_7.HexagonSpriteConfig;
     }],
     execute: function () {
       _crd = true;
@@ -64,9 +65,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       _cclegacy._RF.push({}, "52ead15sa1HHITEB8HYuhBB", "MapController", undefined); // MapController.ts
 
 
-      __checkObsolete__(['_decorator', 'Component', 'Node', 'SpriteFrame', 'assetManager', 'view', 'Size', 'Vec3']);
+      __checkObsolete__(['_decorator', 'Component', 'Node', 'SpriteFrame', 'assetManager', 'view', 'Size', 'Vec3', 'AssetManager']); // 新增导入
 
-      // 新增导入
+
       ({
         ccclass,
         property
@@ -140,50 +141,39 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           this.model.initializeTileMap(cols, rows);
         }
 
-        loadResources() {
-          return new Promise((resolve, reject) => {
-            const bundleName = 'Images'; // 直接使用固定的 bundle 名称
+        async loadResources() {
+          const bundleName = 'Images';
+          const terrainType = 'Dirt'; // 可通过配置或外部传入切换为 Grass、Stone 等
+          // 获取 SpriteFrame 路径列表（来自 JSON 或 TS 配置）
 
-            const spriteFramePaths = [(_crd && HexagonSpriteFrame === void 0 ? (_reportPossibleCrUseOfHexagonSpriteFrame({
-              error: Error()
-            }), HexagonSpriteFrame) : HexagonSpriteFrame).Dirt01, (_crd && HexagonSpriteFrame === void 0 ? (_reportPossibleCrUseOfHexagonSpriteFrame({
-              error: Error()
-            }), HexagonSpriteFrame) : HexagonSpriteFrame).Dirt02, (_crd && HexagonSpriteFrame === void 0 ? (_reportPossibleCrUseOfHexagonSpriteFrame({
-              error: Error()
-            }), HexagonSpriteFrame) : HexagonSpriteFrame).Dirt03, (_crd && HexagonSpriteFrame === void 0 ? (_reportPossibleCrUseOfHexagonSpriteFrame({
-              error: Error()
-            }), HexagonSpriteFrame) : HexagonSpriteFrame).Dirt04];
-            assetManager.loadBundle(bundleName, (err, bundle) => {
-              if (err) {
-                console.error('Failed to load bundle:', err);
-                reject(err);
-                return;
-              }
+          const spriteFramePaths = (_crd && HexagonSpriteConfig === void 0 ? (_reportPossibleCrUseOfHexagonSpriteConfig({
+            error: Error()
+          }), HexagonSpriteConfig) : HexagonSpriteConfig).getTerrainFrames(terrainType); // 异步加载资源
 
-              const spriteFrames = [];
+          const spriteFrames = [];
 
-              const loadNext = index => {
-                if (index >= spriteFramePaths.length) {
-                  this.model.setSpriteFrames(spriteFrames);
-                  resolve();
-                  return;
-                }
-
-                bundle.load(spriteFramePaths[index], SpriteFrame, (err, spriteFrame) => {
-                  if (err) {
-                    console.error('Failed to load sprite frame:', spriteFramePaths[index], err);
-                    reject(err);
-                    return;
-                  }
-
-                  spriteFrames.push(spriteFrame);
-                  loadNext(index + 1);
-                });
-              };
-
-              loadNext(0);
+          try {
+            const bundle = await new Promise((resolve, reject) => {
+              assetManager.loadBundle(bundleName, (err, bundle) => {
+                if (err) reject(err);else resolve(bundle);
+              });
             });
-          });
+
+            for (const path of spriteFramePaths) {
+              const frame = await new Promise((resolve, reject) => {
+                bundle.load(path, SpriteFrame, (err, spriteFrame) => {
+                  if (err) reject(err);else resolve(spriteFrame);
+                });
+              });
+              spriteFrames.push(frame);
+            }
+
+            this.model.setSpriteFrames(spriteFrames);
+            return spriteFrames;
+          } catch (err) {
+            console.error('资源加载失败:', err);
+            throw err;
+          }
         }
 
       }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "layout", [_dec2], {

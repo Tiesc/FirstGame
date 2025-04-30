@@ -1,0 +1,11 @@
+{
+  "tileSets": {
+    "bundle": "Images",
+    "Dirt": [
+      "Tiles/Terrain/Dirt/dirt_01/spriteFrame",
+      "Tiles/Terrain/Dirt/dirt_02/spriteFrame",
+      "Tiles/Terrain/Dirt/dirt_03/spriteFrame",
+      "Tiles/Terrain/Dirt/dirt_04/spriteFrame"
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 4120.658792,
+      "mTimestamp": 4481.540042,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -514,7 +514,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 8028851.100417,
+      "mTimestamp": 3007683.14,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -602,7 +602,7 @@
           }
         },
         {
-          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Components/HexagonComponent.ts",
+          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Configs/TileProperties.ts",
           "resolved": "__unresolved_6",
           "loc": {
             "start": {
@@ -611,12 +611,12 @@
             },
             "end": {
               "line": 10,
-              "column": 98
+              "column": 93
             }
           }
         },
         {
-          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Enums/TileEnums.ts",
+          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Controllers/MapController.ts",
           "resolved": "__unresolved_7",
           "loc": {
             "start": {
@@ -625,12 +625,12 @@
             },
             "end": {
               "line": 11,
-              "column": 86
+              "column": 96
             }
           }
         },
         {
-          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/MapController.ts",
+          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Core/EventCenter.ts",
           "resolved": "__unresolved_8",
           "loc": {
             "start": {
@@ -639,12 +639,12 @@
             },
             "end": {
               "line": 12,
-              "column": 88
+              "column": 87
             }
           }
         },
         {
-          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/MapData.ts",
+          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Core/GameConfig.ts",
           "resolved": "__unresolved_9",
           "loc": {
             "start": {
@@ -653,12 +653,12 @@
             },
             "end": {
               "line": 13,
-              "column": 82
+              "column": 86
             }
           }
         },
         {
-          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/MapModel.ts",
+          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Enums/TileEnums.ts",
           "resolved": "__unresolved_10",
           "loc": {
             "start": {
@@ -667,12 +667,12 @@
             },
             "end": {
               "line": 14,
-              "column": 83
+              "column": 86
             }
           }
         },
         {
-          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/MapView.ts",
+          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Models/HexTileModel.ts",
           "resolved": "__unresolved_11",
           "loc": {
             "start": {
@@ -681,12 +681,12 @@
             },
             "end": {
               "line": 15,
-              "column": 82
+              "column": 90
             }
           }
         },
         {
-          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/HexCell2D.ts",
+          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Models/MapModel.ts",
           "resolved": "__unresolved_12",
           "loc": {
             "start": {
@@ -700,7 +700,7 @@
           }
         },
         {
-          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/HexCell3D.ts",
+          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/HexCell2D.ts",
           "resolved": "__unresolved_13",
           "loc": {
             "start": {
@@ -714,7 +714,7 @@
           }
         },
         {
-          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/HexMap.ts",
+          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/HexCell3D.ts",
           "resolved": "__unresolved_14",
           "loc": {
             "start": {
@@ -723,12 +723,12 @@
             },
             "end": {
               "line": 18,
-              "column": 83
+              "column": 86
             }
           }
         },
         {
-          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/HexMetrics.ts",
+          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/HexMap.ts",
           "resolved": "__unresolved_15",
           "loc": {
             "start": {
@@ -737,12 +737,12 @@
             },
             "end": {
               "line": 19,
-              "column": 87
+              "column": 83
             }
           }
         },
         {
-          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Services/MapLayoutService.ts",
+          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Other/HexMetrics.ts",
           "resolved": "__unresolved_16",
           "loc": {
             "start": {
@@ -751,12 +751,12 @@
             },
             "end": {
               "line": 20,
-              "column": 96
+              "column": 87
             }
           }
         },
         {
-          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles/Tile.ts",
+          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Scenes/MainSceneController.ts",
           "resolved": "__unresolved_17",
           "loc": {
             "start": {
@@ -765,7 +765,63 @@
             },
             "end": {
               "line": 21,
+              "column": 97
+            }
+          }
+        },
+        {
+          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Services/MapLayoutService.ts",
+          "resolved": "__unresolved_18",
+          "loc": {
+            "start": {
+              "line": 22,
+              "column": 7
+            },
+            "end": {
+              "line": 22,
+              "column": 96
+            }
+          }
+        },
+        {
+          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Services/ResourceLoaderService.ts",
+          "resolved": "__unresolved_19",
+          "loc": {
+            "start": {
+              "line": 23,
+              "column": 7
+            },
+            "end": {
+              "line": 23,
+              "column": 101
+            }
+          }
+        },
+        {
+          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles/Tile.ts",
+          "resolved": "__unresolved_20",
+          "loc": {
+            "start": {
+              "line": 24,
+              "column": 7
+            },
+            "end": {
+              "line": 24,
               "column": 81
+            }
+          }
+        },
+        {
+          "value": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Views/MapView.ts",
+          "resolved": "__unresolved_21",
+          "loc": {
+            "start": {
+              "line": 25,
+              "column": 7
+            },
+            "end": {
+              "line": 25,
+              "column": 84
             }
           }
         }
@@ -817,7 +873,28 @@
         {
           "resolved": {
             "type": "module",
-            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Components/HexagonComponent.ts"
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Configs/TileProperties.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Controllers/MapController.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Core/EventCenter.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Core/GameConfig.ts"
           },
           "messages": []
         },
@@ -831,28 +908,14 @@
         {
           "resolved": {
             "type": "module",
-            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/MapController.ts"
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Models/HexTileModel.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/MapData.ts"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "module",
-            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/MapModel.ts"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "module",
-            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/MapView.ts"
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Models/MapModel.ts"
           },
           "messages": []
         },
@@ -887,6 +950,13 @@
         {
           "resolved": {
             "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Scenes/MainSceneController.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
             "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Services/MapLayoutService.ts"
           },
           "messages": []
@@ -894,7 +964,21 @@
         {
           "resolved": {
             "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Services/ResourceLoaderService.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
             "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles/Tile.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Views/MapView.ts"
           },
           "messages": []
         }
@@ -1463,7 +1547,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1745983697821,
+      "mTimestamp": 1746003334530,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",
@@ -2501,7 +2585,7 @@
     },
     "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/MapController.ts": {
       "mTimestamp": {
-        "mtime": 1745991709322.4907,
+        "mtime": 1745995951546.4695,
         "uuid": "52eadd79-b1ad-471c-84c4-07c1d8ba1041"
       },
       "chunkId": "d75c1f062d7b4da51cdadcb2c213256fef0e05b1",
@@ -2521,11 +2605,11 @@
           "loc": {
             "start": {
               "line": 2,
-              "column": 89
+              "column": 103
             },
             "end": {
               "line": 2,
-              "column": 93
+              "column": 107
             }
           }
         },
@@ -2577,11 +2661,11 @@
           "loc": {
             "start": {
               "line": 6,
-              "column": 50
+              "column": 30
             },
             "end": {
               "line": 6,
-              "column": 70
+              "column": 50
             }
           }
         },
@@ -2596,6 +2680,20 @@
             "end": {
               "line": 7,
               "column": 36
+            }
+          }
+        },
+        {
+          "value": "../Configs/HexagonSpriteConfig",
+          "resolved": "__unresolved_6",
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 36
+            },
+            "end": {
+              "line": 8,
+              "column": 68
             }
           }
         }
@@ -2664,135 +2762,25 @@
             "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Tiles/Tile.ts"
           },
           "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Configs/HexagonSpriteConfig.ts"
+          },
+          "messages": []
         }
       ]
     },
     "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/MapModel.ts": {
-      "mTimestamp": {
-        "mtime": 1745990626715.9521,
-        "uuid": "bf2c9a92-8a85-4f65-8de2-dd9010789872"
-      },
-      "chunkId": "ef307f5c5ecb72a6e41caed3661d1cf5db287907",
-      "imports": [
-        {
-          "value": "cce:/internal/code-quality/cr.mjs",
-          "resolved": "__unresolved_0"
-        },
-        {
-          "value": "cc"
-        },
-        {
-          "value": "cc"
-        }
-      ],
-      "type": "esm",
-      "resolutions": [
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/code-quality/cr.mjs"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/x/cc"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/x/cc"
-          },
-          "messages": []
-        }
-      ]
+      "erroneous": true,
+      "mTimestamp": 0,
+      "chunkId": "a9a9b1255de36ff9dfeaac4b3f8ef65c502e8165"
     },
     "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/MapView.ts": {
-      "mTimestamp": {
-        "mtime": 1745991654975.4446,
-        "uuid": "9b48e2d9-abbf-4d38-b3aa-ff43444f263c"
-      },
-      "chunkId": "49ee6ee2d67864867437bb576d62dad7306ee15b",
-      "imports": [
-        {
-          "value": "cce:/internal/code-quality/cr.mjs",
-          "resolved": "__unresolved_0"
-        },
-        {
-          "value": "cc"
-        },
-        {
-          "value": "cc"
-        },
-        {
-          "value": "cc",
-          "loc": {
-            "start": {
-              "line": 2,
-              "column": 48
-            },
-            "end": {
-              "line": 2,
-              "column": 52
-            }
-          }
-        },
-        {
-          "value": "../Enums/TileEnums",
-          "resolved": "__unresolved_1",
-          "loc": {
-            "start": {
-              "line": 4,
-              "column": 30
-            },
-            "end": {
-              "line": 4,
-              "column": 50
-            }
-          }
-        }
-      ],
-      "type": "esm",
-      "resolutions": [
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/code-quality/cr.mjs"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/x/cc"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/x/cc"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/x/cc"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "module",
-            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Enums/TileEnums.ts"
-          },
-          "messages": []
-        }
-      ]
+      "erroneous": true,
+      "mTimestamp": 0,
+      "chunkId": "5c27e1884bdb09acfdc5886e45ded639f3131149"
     },
     "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/MapData.ts": {
       "mTimestamp": {
@@ -3453,7 +3441,7 @@
     },
     "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Enums/TileEnums.ts": {
       "mTimestamp": {
-        "mtime": 1745984411193.291,
+        "mtime": 1745995622036.876,
         "uuid": "86833591-e141-4777-aab8-5a0c52611a53"
       },
       "chunkId": "d86c07ddd1fd5a70dfb724f79d19d8d6bf2b76a9",
@@ -3475,7 +3463,7 @@
     },
     "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Services/MapLayoutService.ts": {
       "mTimestamp": {
-        "mtime": 1745984411193.26,
+        "mtime": 1745997172736.6465,
         "uuid": "e5234d9d-795e-4c30-93d2-e0e0a56e2524"
       },
       "chunkId": "cbff896f132ba2b7eff8a9a7498f8343ec44a1a2",
@@ -3500,6 +3488,20 @@
               "column": 50
             }
           }
+        },
+        {
+          "value": "../Core/GameConfig",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 27
+            },
+            "end": {
+              "line": 3,
+              "column": 47
+            }
+          }
         }
       ],
       "type": "esm",
@@ -3522,6 +3524,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Enums/TileEnums.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Core/GameConfig.ts"
           },
           "messages": []
         }
@@ -3576,6 +3585,982 @@
             "url": "cce:/internal/x/cc"
           },
           "messages": []
+        }
+      ]
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Configs/HexagonSpriteConfig.ts": {
+      "erroneous": true,
+      "mTimestamp": 0,
+      "chunkId": "53aa2914509ce617e115695e1032bac5708c3ef8"
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Configs/TileProperties.ts": {
+      "mTimestamp": {
+        "mtime": 1745995703534.834,
+        "uuid": "0667d696-3666-4b0c-8382-5fd241d9ea6e"
+      },
+      "chunkId": "0aae64ada52526d4a11ba4cc98c2d7a4e8d52583",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "../Scripts/Enums/TileEnums",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 32
+            },
+            "end": {
+              "line": 2,
+              "column": 60
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Enums/TileEnums.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Map/Models/HexTileModel.ts": {
+      "mTimestamp": {
+        "mtime": 1745995826029.3096,
+        "uuid": "2448953a-9bc6-4459-8727-037e1b848f76"
+      },
+      "chunkId": "141be913e451eabc1e477b8f9b0dc38d8ceef5fe",
+      "imports": [
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Components/Models/HexTileModel.ts": {
+      "mTimestamp": {
+        "mtime": 1745995826029.3096,
+        "uuid": "2448953a-9bc6-4459-8727-037e1b848f76"
+      },
+      "chunkId": "6765e6c2be1eab0d60f797452a622a6d3029be27",
+      "imports": [
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Models/HexTileModel.ts": {
+      "mTimestamp": {
+        "mtime": 1745996025337.2617,
+        "uuid": "2448953a-9bc6-4459-8727-037e1b848f76"
+      },
+      "chunkId": "a1862898122947bc4e9595b6fd46af7fe6ec00e2",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "../Configs/TileProperties",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 31
+            },
+            "end": {
+              "line": 2,
+              "column": 58
+            }
+          }
+        },
+        {
+          "value": "../Enums/TileEnums",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 32
+            },
+            "end": {
+              "line": 3,
+              "column": 52
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Configs/TileProperties.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Enums/TileEnums.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Configs/HexagonSpriteConfig.ts": {
+      "mTimestamp": {
+        "mtime": 1745995028700.7007,
+        "uuid": "7169034c-beec-4577-9369-d0bd9ee8d5b5"
+      },
+      "chunkId": "1f8d5ee8da2aec35947bda50843cfb2f01cabd5f",
+      "imports": [
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Configs/TileProperties.ts": {
+      "mTimestamp": {
+        "mtime": 1745999633734.259,
+        "uuid": "0667d696-3666-4b0c-8382-5fd241d9ea6e"
+      },
+      "chunkId": "7636f466fa5dde6c74818b6c9f9242d03cbc0258",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "../Enums/TileEnums",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 32
+            },
+            "end": {
+              "line": 2,
+              "column": 52
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Enums/TileEnums.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Core/GameConfig.ts": {
+      "mTimestamp": {
+        "mtime": 1745996609755.1135,
+        "uuid": "5578b466-1ec0-4894-8754-a9f571a42e2f"
+      },
+      "chunkId": "6211014d626dfd18ee93064a95b9588816da337d",
+      "imports": [
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Core/EventCenter.ts": {
+      "mTimestamp": {
+        "mtime": 1746002240971.2424,
+        "uuid": "fe43ad6e-78b3-400b-bbf1-bfd65cb34364"
+      },
+      "chunkId": "e2d30c7dc1adbf5d6b949f6321ca347428072ad4",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 74
+            },
+            "end": {
+              "line": 2,
+              "column": 78
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Models/MapModel.ts": {
+      "mTimestamp": {
+        "mtime": 1745998203401.6929,
+        "uuid": "bf2c9a92-8a85-4f65-8de2-dd9010789872"
+      },
+      "chunkId": "b470095884b765d1ec5d97e7193299111564abd6",
+      "imports": [
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Views/MapView.ts": {
+      "mTimestamp": {
+        "mtime": 1745997521553.22,
+        "uuid": "9b48e2d9-abbf-4d38-b3aa-ff43444f263c"
+      },
+      "chunkId": "c5d2a58d69fa81b09e48df01e995a4b5bcc6df95",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 48
+            },
+            "end": {
+              "line": 2,
+              "column": 52
+            }
+          }
+        },
+        {
+          "value": "../Enums/TileEnums",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 30
+            },
+            "end": {
+              "line": 3,
+              "column": 50
+            }
+          }
+        },
+        {
+          "value": "../Core/GameConfig",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 27
+            },
+            "end": {
+              "line": 4,
+              "column": 47
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Enums/TileEnums.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Core/GameConfig.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Controllers/MapController.ts": {
+      "mTimestamp": {
+        "mtime": 1746006309688.3376,
+        "uuid": "52eadd79-b1ad-471c-84c4-07c1d8ba1041"
+      },
+      "chunkId": "ea0739dd92ff34e7791b5f17210e04c90c5e95bb",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 106
+            },
+            "end": {
+              "line": 2,
+              "column": 110
+            }
+          }
+        },
+        {
+          "value": "../Views/MapView",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 24
+            },
+            "end": {
+              "line": 3,
+              "column": 42
+            }
+          }
+        },
+        {
+          "value": "../Models/MapModel",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 25
+            },
+            "end": {
+              "line": 4,
+              "column": 45
+            }
+          }
+        },
+        {
+          "value": "../Enums/TileEnums",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 30
+            },
+            "end": {
+              "line": 5,
+              "column": 50
+            }
+          }
+        },
+        {
+          "value": "../Services/MapLayoutService",
+          "resolved": "__unresolved_4",
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 33
+            },
+            "end": {
+              "line": 7,
+              "column": 63
+            }
+          }
+        },
+        {
+          "value": "../Services/ResourceLoaderService",
+          "resolved": "__unresolved_5",
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 38
+            },
+            "end": {
+              "line": 8,
+              "column": 73
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Views/MapView.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Models/MapModel.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Enums/TileEnums.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Services/MapLayoutService.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Services/ResourceLoaderService.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Data/tile_config.js.ts": {
+      "mTimestamp": {
+        "mtime": 1745997217938.7612,
+        "uuid": "6dea8eb6-0186-4a29-ab29-1c90b51de4ae"
+      },
+      "chunkId": "a9444c1591ee8a140c392527dd06affc960bb905",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 44
+            },
+            "end": {
+              "line": 1,
+              "column": 48
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Services/ResourceLoaderService.ts": {
+      "mTimestamp": {
+        "mtime": 1746004992571.8606,
+        "uuid": "a4e9a414-4707-4327-8442-692a64a4bef9"
+      },
+      "chunkId": "cb6b70719fca44edea6e6be5fe55229ce0dc5981",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 56
+            },
+            "end": {
+              "line": 2,
+              "column": 60
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Scenes/MainSceneController.ts": {
+      "mTimestamp": {
+        "mtime": 1746002544738.7725,
+        "uuid": "ce4c4a0d-2bf7-460d-a7d9-1a062bd7ed38"
+      },
+      "chunkId": "b924b6071c2e6b20866722f76eb350cc70946d69",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 44
+            },
+            "end": {
+              "line": 1,
+              "column": 48
+            }
+          }
+        },
+        {
+          "value": "../Controllers/MapController",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 30
+            },
+            "end": {
+              "line": 2,
+              "column": 60
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Controllers/MapController.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Scenes/MainSceneController1.ts": {
+      "mTimestamp": {
+        "mtime": 1746001587231.7668,
+        "uuid": "1efbcbac-dc7e-46e7-a68d-6eba608be9e5"
+      },
+      "chunkId": "625c5f9d9c899b2d6ec3f809924b8ff65e3f6407",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 44
+            },
+            "end": {
+              "line": 2,
+              "column": 48
+            }
+          }
+        },
+        {
+          "value": "../Controllers/MapController",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 30
+            },
+            "end": {
+              "line": 3,
+              "column": 60
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///Users/tiesc/Desktop/Study/FirstGame/assets/Scripts/Controllers/MapController.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/resources/Configs/HexagonSpriteConfig.ts": {
+      "mTimestamp": {
+        "mtime": 1745995028700.7007,
+        "uuid": "7169034c-beec-4577-9369-d0bd9ee8d5b5"
+      },
+      "chunkId": "b4da597860836d9f580c1a345fc44dd182ce677f",
+      "imports": [
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///Users/tiesc/Desktop/Study/FirstGame/assets/resources/Configs/TileProperties.ts": {
+      "mTimestamp": {
+        "mtime": 1745999633734.259,
+        "uuid": "0667d696-3666-4b0c-8382-5fd241d9ea6e"
+      },
+      "chunkId": "c19faf46f7ba54f40506580daa39425013161bab",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "../Enums/TileEnums",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 32
+            },
+            "end": {
+              "line": 2,
+              "column": 52
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "error",
+            "text": "Error: 以 file:///Users/tiesc/Desktop/Study/FirstGame/assets/resources/Configs/TileProperties.ts 为起点找不到模块 \"../Enums/TileEnums\""
+          },
+          "messages": [
+            {
+              "level": "warn",
+              "text": "你是否遗漏了扩展名？请注意你不能在模块说明符中省略扩展名。"
+            }
+          ]
         }
       ]
     }
