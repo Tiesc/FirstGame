@@ -36,26 +36,17 @@
   },
   "3727ea38-0ce4-4950-9481-ff2281e004fc": {
     "url": "db://assets/Prefab/Box.prefab",
-    "value": {
-      "depends": [
-        "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941"
-      ],
-      "dependScripts": []
-    },
+    "value": {},
     "versionCode": 1
   },
   "a97d308f-8f9a-40e2-a250-3bcdf00ecddb": {
     "url": "db://assets/Animation/oneStep.anim",
-    "value": {
-      "depends": []
-    },
+    "value": {},
     "versionCode": 1
   },
   "8a4508c7-eec1-42f3-bbe1-33ce79fbc3fe": {
     "url": "db://assets/Animation/twoStep.anim",
-    "value": {
-      "depends": []
-    },
+    "value": {},
     "versionCode": 1
   },
   "5cf00672-6964-416e-a88c-bf40c20b6da1": {
@@ -15553,12 +15544,7 @@
   },
   "4b6ece17-d25f-4ca0-aaa5-b68612a00700": {
     "url": "db://assets/Prefab/Hexagon.prefab",
-    "value": {
-      "depends": [
-        "99999b59-cd36-4192-94a4-bea0490c72e4@f9941"
-      ],
-      "dependScripts": []
-    },
+    "value": {},
     "versionCode": 1
   },
   "b90a1579-0adf-4309-a628-74b400e0cddb": {
@@ -15891,6 +15877,35 @@
   "ce4c4a0d-2bf7-460d-a7d9-1a062bd7ed38": {
     "url": "db://assets/Scripts/Scenes/MainSceneController.ts",
     "value": {},
+    "versionCode": 1
+  },
+  "d78fb32d-e721-4ccb-9cca-427688510efd": {
+    "url": "db://assets/resources/Maps",
+    "value": {},
+    "versionCode": 1
+  },
+  "c6018da2-32a9-442f-85fa-31865a6406b9": {
+    "url": "db://assets/Scripts/Data/MapData.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "c8e3629c-1e41-4906-8778-846e4f7e1986": {
+    "url": "db://assets/Scripts/Managers/MapManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "b702455a-37ec-4289-9934-8091f70274b1": {
+    "url": "db://assets/resources/Maps/tilesheet.tsx",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "65a91011-fc2f-4c85-9d50-3e4ef990201c": {
+    "url": "db://assets/resources/Maps/map1.json",
+    "value": {
+      "depends": []
+    },
     "versionCode": 1
   }
 }

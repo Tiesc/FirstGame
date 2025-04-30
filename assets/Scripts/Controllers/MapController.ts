@@ -6,6 +6,7 @@ import { HexagonLayout } from '../Enums/TileEnums';
 import { GameConfig } from '../Core/GameConfig';
 import { MapLayoutService } from '../Services/MapLayoutService';
 import { ResourceLoaderService } from '../Services/ResourceLoaderService';
+import { MapManager } from '../Managers/MapManager';
 
 @_decorator.ccclass('MapController')
 export class MapController extends Component {
@@ -18,7 +19,6 @@ export class MapController extends Component {
     private model: MapModel;
     private view: MapView;
     private mapLayoutService: MapLayoutService = new MapLayoutService();
-
     public async init(): Promise<void> {
         this.model = new MapModel();
         this.view = new MapView(this.node);
@@ -29,6 +29,8 @@ export class MapController extends Component {
                 { width: screenSize.width, height: screenSize.height },
                 this.layout
             );
+            // const mapJson = await MapManager.loadMap('map1');
+            // this.view.generateFromTiledMap(mapJson); // 调用视图方法生成地图
             this.view.generateHexagons(this.model.getTileMap(), spriteFrames, this.layout);
         } catch (error) {
             console.error('地图初始化失败:', error);

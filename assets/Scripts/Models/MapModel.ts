@@ -11,7 +11,8 @@ export class MapModel {
     public initializeTileMap(rows: number, cols: number): void {
         this.tileMap = Array.from({ length: rows }, () =>
             Array.from({ length: cols }, () => {
-                const randomIndex = Math.floor(Math.random() * 4) + 1;
+                // const randomIndex = Math.floor(Math.random() * 4) + 1;
+                const randomIndex = 2;
                 return `dirt_0${randomIndex}`;
             })
         );
